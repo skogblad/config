@@ -46,6 +46,8 @@ export default [
   ...tseslint.configs.recommended,
 ];
 
+<br>
+
 ### Prettier
 **1. Installera:** npm install --save-dev --save-exact prettier
 
