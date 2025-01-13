@@ -18,7 +18,7 @@ export default defineConfig({
 <br>
 
 ### .gitignore -fil
-**Lägg till följande:** .DS_Store *.css.map, style.css
+**Lägg till följande:** .DS_Store, *.css.map, style.css, node_modules/
 
 <br>
 
