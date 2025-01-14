@@ -53,7 +53,7 @@ export default [
 
 **2. Skapa en tom config-fil som heter .prettierrc:** node --eval "fs.writeFileSync('.prettierrc','{}\n')"
 
-**3. kapa en prettierignore-fil för att ignorera vissa filer:** node --eval "fs.writeFileSync('.prettierignore','# Ignore artifacts:\nbuild\ncoverage\n')"
+**3. Skapa en prettierignore-fil för att ignorera vissa filer:** node --eval "fs.writeFileSync('.prettierignore','# Ignore artifacts:\nbuild\ncoverage\n')"
 
 **4. Formatera med npm:** npx prettier . --write
 
