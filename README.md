@@ -20,7 +20,7 @@ export default defineConfig({
   'base': '/adressen-till-ert-repo-här/'
 });
 
-<br>
+-----
 
 ### Vue
 **1. Lägg till:** 
@@ -30,12 +30,12 @@ $ npm install
 $ npm run dev
 ```
 
-<br>
+-----
 
 ### .gitignore -fil
 **Lägg till följande:** .DS_Store, *.css.map, style.css, node_modules/
 
-<br>
+-----
 
 ### ESLint
 **Installera:** 
@@ -63,7 +63,7 @@ export default [
   ...tseslint.configs.recommended,
 ];
 
-<br>
+-----
 
 ### Prettier
 **1. Installera:** 
@@ -121,7 +121,7 @@ Exempel: Jennis [.prettierrc](https://github.com/postmodernistx/configs/blob/mai
 
 Exempel: Jennis [.prettierignore](https://github.com/postmodernistx/configs/blob/main/.prettierignore)
 
-<br>
+-----
 
 ### Sass
 **Installera:** 
@@ -130,7 +130,7 @@ $ npm install --save-dev sass
 ```
 Skapa en style.scss-fil och länka in den högst upp i main.ts-filen.
 
-<br>
+-----
 
 ### Aktivera publicering av sidan på Github
 - På GitHub för valt repo, gå till fliken Settings
@@ -140,9 +140,9 @@ Skapa en style.scss-fil och länka in den högst upp i main.ts-filen.
 
 Gå till startsidan på ert repo, klicka på kugghjulet till höger under repo-namnet och klicka sedan i kryssrutan (checkbox:en) Use your GitHub Pages website.
 
-<br>
+-----
 
-#### Testa att allt fungerar
+### Testa att allt fungerar
 **I terminalen, skriv:**
 ```bash
 $ npm run dev
@@ -157,7 +157,7 @@ Nu klonar varje enskild gruppmedlem ner repot till sin dator, och (1) installera
 $ npm install
 $ npm run dev
 ```
-<br>
+-----
 
-#### Klona repo till privat Github sida
+### Klona repo till privat Github sida
 Länk till Jenni's [Youtube video](https://www.youtube.com/watch?v=AAP2b3fKYQ4)
