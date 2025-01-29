@@ -1,5 +1,5 @@
 # config
-*Use for every (new) project:*
+*Använd vid varje (nytt) projekt:*
 
 ### Vite:
 **1. Lägg till:**
@@ -22,7 +22,7 @@ export default defineConfig({
 
 <br>
 
-### Vue + Vite
+### Vue
 **1. Lägg till:** 
 ```bash
 $ npm create vue@latest
