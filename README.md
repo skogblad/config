@@ -17,6 +17,15 @@ export default defineConfig({
 
 <br>
 
+### Vue + Vite
+**1. Installera:** npm create vue@latest
+
+**2. Updatera vid redan installerat:** npm install
+
+**3. Kör vite:** npm run dev
+
+<br>
+
 ### .gitignore -fil
 **Lägg till följande:** .DS_Store, *.css.map, style.css, node_modules/
 
