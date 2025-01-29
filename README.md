@@ -5,14 +5,18 @@
 **1. Lägg till:**
 ```bash
 $ npm create vite@latest .
-$ npm install
-$ npm run dev
 ```
 *- Välj Vue som ramverk om så önskas:*
 <br>*- Välj "Customize with create-vue" för att lägga till routing och state management i app:*
 <br>*- Välj YES på: Vue Router, Pinia*
 <br>*- Välj NO på: JSX Support, Vitest, End-to-end T. S.*
+<br>*- Välj om önskas Eslint + Prettier. **OBS!** - lägg in reglerna nu direkt så de kommer med i formateringen nedan*
 
+```bash
+$ npm install
+$ npm format
+$ npm run dev
+```
 **2. vite.config.ts** -filen: <br>
 import { defineConfig } from 'vite';
 
