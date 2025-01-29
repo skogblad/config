@@ -2,13 +2,18 @@
 *Use for every (new) project:*
 
 ### Vite:
-**1. Installera:** npm create vite@latest .
+**1. Lägg till:**
+```bash
+$ npm create vite@latest .
+$ npm install
+$ npm run dev
+```
+*- Välj Vue som ramverk om så önskas:*
+<br>*- Välj "Customize with create-vue" för att lägga till routing och state management i app:*
+<br>*- Välj YES på: Vue Router, Pinia*
+<br>*- Välj NO på: JSX Support, Vitest, End-to-end T. S.*
 
-**2. Updatera vid redan installerat(?):** npm install
-
-**3. Kör vite:** npm run dev
-
-**4. vite.config.ts** -filen: <br>
+**2. vite.config.ts** -filen: <br>
 import { defineConfig } from 'vite';
 
 export default defineConfig({
@@ -18,11 +23,12 @@ export default defineConfig({
 <br>
 
 ### Vue + Vite
-**1. Installera:** npm create vue@latest
-
-**2. Updatera vid redan installerat:** npm install
-
-**3. Kör vite:** npm run dev
+**1. Lägg till:** 
+```bash
+$ npm create vue@latest
+$ npm install
+$ npm run dev
+```
 
 <br>
 
@@ -32,8 +38,10 @@ export default defineConfig({
 <br>
 
 ### ESLint
-**Installera:** npm init @eslint/config@latest
-
+**Installera:** 
+```bash
+$ npm init @eslint/config@latest
+```
 **Exempel rules:** <br>
 import globals from "globals";
 import pluginJs from "@eslint/js";
@@ -58,16 +66,26 @@ export default [
 <br>
 
 ### Prettier
-**1. Installera:** npm install --save-dev --save-exact prettier
-
-**2. Skapa en tom config-fil som heter .prettierrc:** node --eval "fs.writeFileSync('.prettierrc','{}\n')"
-
-**3. Skapa en prettierignore-fil för att ignorera vissa filer:** node --eval "fs.writeFileSync('.prettierignore','# Ignore artifacts:\nbuild\ncoverage\n')"
-
-**4. Formatera med npm:** npx prettier . --write
-
-**5. Installera eslint-config-prettier för att Prettier och ESLint ska lira ihop:** npm install --save-dev eslint-config-prettier
-
+**1. Installera:** 
+```bash
+$ npm install --save-dev --save-exact prettier
+```
+**2. Skapa en tom config-fil som heter .prettierrc:** 
+```bash
+$ node --eval "fs.writeFileSync('.prettierrc','{}\n')"
+```
+**3. Skapa en prettierignore-fil för att ignorera vissa filer:** 
+```bash
+$ node --eval "fs.writeFileSync('.prettierignore','# Ignore artifacts:\nbuild\ncoverage\n')"
+```
+**4. Formatera med npm:** 
+```bash
+$ npx prettier . --write
+```
+**5. Installera eslint-config-prettier för att Prettier och ESLint ska lira ihop:** 
+```bash
+$ npm install --save-dev eslint-config-prettier
+```
 **6. Öppna eslint.config.mjs-filen och lägg till dessa 2 rader:** <br>
 import globals from "globals";
 import pluginJs from "@eslint/js";
@@ -106,28 +124,40 @@ Exempel: Jennis [.prettierignore](https://github.com/postmodernistx/configs/blob
 <br>
 
 ### Sass
-**Installera:** npm install --save-dev sass
-
+**Installera:** 
+```bash
+$ npm install --save-dev sass
+```
 Skapa en style.scss-fil och länka in den högst upp i main.ts-filen.
 
 <br>
 
 ### Aktivera publicering av sidan på Github
-Gå in på GitHub i ert repo, gå till fliken Settings --> Pages och aktivera Pages, välj GitHub Actions i dropdown-menyn. Lägg in publicerings-skript för Vite härifrån i mappen **.github/workflows** - döp filen till **deploy.yml**.
+- På GitHub för valt repo, gå till fliken Settings
+- Välj Pages och aktivera Pages, välj GitHub Actions i dropdown-menyn.
+- Lägg in publicerings-skript för Vite härifrån i mappen **.github/workflows**
+  - Döp filen till **deploy.yml**.
 
 Gå till startsidan på ert repo, klicka på kugghjulet till höger under repo-namnet och klicka sedan i kryssrutan (checkbox:en) Use your GitHub Pages website.
 
 <br>
 
-### Testa att allt fungerar
-**I terminalen, skriv:** npm run dev
-
-Gå in på adressen som visas i terminalen, förmodligen **http://localhost:5173** och kolla att sidan syns.
+#### Testa att allt fungerar
+**I terminalen, skriv:**
+```bash
+$ npm run dev
+```
+Gå in på adressen som visas, förmodligen **http://localhost:5173** och kolla att sidan syns.
 
 <br>
 
 #### För grupparbete
-Nu klonar varje enskild gruppmedlem ner repot till sin dator, och installerar nödvändiga "dependencies" genom att i terminalen skriva **npm install**.
+Nu klonar varje enskild gruppmedlem ner repot till sin dator, och (1) installerar nödvändiga "dependencies" och (2) säkerställ att det ser likadant ut på varje persons dator.
+```bash
+$ npm install
+$ npm run dev
+```
+<br>
 
-Skriv sedan **npm run dev** och säkerställ att det ser likadant ut på varje persons dator.
-
+#### Klona repo till privat Github sida
+Länk till Jenni's [Youtube video](https://www.youtube.com/watch?v=AAP2b3fKYQ4)
