@@ -67,6 +67,10 @@ export default [
   ...tseslint.configs.recommended,
 ];
 
+**ESLint-kontroll**
+```bash
+$ npm run lint
+```
 -----
 
 ### Prettier
@@ -165,3 +169,8 @@ $ npm run dev
 
 ### Klona repo till privat Github sida
 Länk till Jenni's [Youtube video](https://www.youtube.com/watch?v=AAP2b3fKYQ4)
+
+Vid publicering av projektet, dvs. göra om TS -> JS och Sass -> CSS, kör script:
+```bash
+$ npm run build
+```
