@@ -169,6 +169,12 @@ $ npm run dev
 
 ### Klona repo till privat Github sida
 Länk till Jenni's [Youtube video](https://www.youtube.com/watch?v=AAP2b3fKYQ4)
+```bash
+$ git remote remove origin
+$ git remote add origin *new_repository*
+$ git branch -M main
+$ git push -u origin main
+```
 
 Vid publicering av projektet, dvs. göra om TS -> JS och Sass -> CSS, kör script:
 ```bash
