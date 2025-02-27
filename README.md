@@ -4,7 +4,7 @@
 ### Vite:
 **1. Lägg till:**
 ```bash
-$ npm create vite@latest .
+npm create vite@latest .
 ```
 *- Välj Vue som ramverk om så önskas:*
 <br>*- Välj "Customize with create-vue" för att lägga till routing och state management i app:*
@@ -13,9 +13,9 @@ $ npm create vite@latest .
 <br>*- Välj om önskas Eslint + Prettier. **OBS!** - lägg in reglerna nu direkt så de kommer med i formateringen nedan*
 
 ```bash
-$ npm install
-$ npm format
-$ npm run dev
+npm install
+npm format
+npm run dev
 ```
 **2. vite.config.ts** -filen: <br>
 import { defineConfig } from 'vite';
@@ -29,9 +29,9 @@ export default defineConfig({
 ### Vue
 **1. Lägg till:** 
 ```bash
-$ npm create vue@latest
-$ npm install
-$ npm run dev
+npm create vue@latest
+npm install
+npm run dev
 ```
 
 -----
@@ -44,7 +44,7 @@ $ npm run dev
 ### ESLint
 **Installera:** 
 ```bash
-$ npm init @eslint/config@latest
+npm init @eslint/config@latest
 ```
 **Exempel rules:** <br>
 import globals from "globals";
@@ -69,30 +69,30 @@ export default [
 
 **ESLint-kontroll**
 ```bash
-$ npm run lint
+npm run lint
 ```
 -----
 
 ### Prettier
 **1. Installera:** 
 ```bash
-$ npm install --save-dev --save-exact prettier
+npm install --save-dev --save-exact prettier
 ```
 **2. Skapa en tom config-fil som heter .prettierrc:** 
 ```bash
-$ node --eval "fs.writeFileSync('.prettierrc','{}\n')"
+node --eval "fs.writeFileSync('.prettierrc','{}\n')"
 ```
 **3. Skapa en prettierignore-fil för att ignorera vissa filer:** 
 ```bash
-$ node --eval "fs.writeFileSync('.prettierignore','# Ignore artifacts:\nbuild\ncoverage\n')"
+node --eval "fs.writeFileSync('.prettierignore','# Ignore artifacts:\nbuild\ncoverage\n')"
 ```
 **4. Formatera med npm:** 
 ```bash
-$ npx prettier . --write
+npx prettier . --write
 ```
 **5. Installera eslint-config-prettier för att Prettier och ESLint ska lira ihop:** 
 ```bash
-$ npm install --save-dev eslint-config-prettier
+npm install --save-dev eslint-config-prettier
 ```
 **6. Öppna eslint.config.mjs-filen och lägg till dessa 2 rader:** <br>
 import globals from "globals";
@@ -134,7 +134,7 @@ Exempel: Jennis [.prettierignore](https://github.com/postmodernistx/configs/blob
 ### Sass
 **Installera:** 
 ```bash
-$ npm install --save-dev sass
+npm install --save-dev sass
 ```
 Skapa en style.scss-fil och länka in den högst upp i main.ts-filen.
 
@@ -153,7 +153,7 @@ Gå till startsidan på ert repo, klicka på kugghjulet till höger under repo-n
 ### Testa att allt fungerar
 **I terminalen, skriv:**
 ```bash
-$ npm run dev
+npm run dev
 ```
 Gå in på adressen som visas, förmodligen **http://localhost:5173** och kolla att sidan syns.
 
@@ -162,21 +162,21 @@ Gå in på adressen som visas, förmodligen **http://localhost:5173** och kolla 
 #### För grupparbete
 Nu klonar varje enskild gruppmedlem ner repot till sin dator, och (1) installerar nödvändiga "dependencies" och (2) säkerställ att det ser likadant ut på varje persons dator.
 ```bash
-$ npm install
-$ npm run dev
+npm install
+npm run dev
 ```
 -----
 
 ### Klona repo till privat Github sida
 Länk till Jenni's [Youtube video](https://www.youtube.com/watch?v=AAP2b3fKYQ4)
 ```bash
-$ git remote remove origin
-$ git remote add origin *new_repository*
-$ git branch -M main
-$ git push -u origin main
+git remote remove origin
+git remote add origin *new_repository*
+git branch -M main
+git push -u origin main
 ```
 
 Vid publicering av projektet, dvs. göra om TS -> JS och Sass -> CSS, kör script:
 ```bash
-$ npm run build
+npm run build
 ```
