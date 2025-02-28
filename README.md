@@ -6,7 +6,7 @@
 ```bash
 npm create vite@latest .
 ```
-*- Välj Vue som ramverk om så önskas:*
+*- Välj Vue som ramverk om så önskas (nedan för skolprojekt):*
 <br>*- Välj "Customize with create-vue" för att lägga till routing och state management i app:*
 <br>*- Välj YES på: Vue Router, Pinia*
 <br>*- Välj NO på: JSX Support, Vitest, End-to-end T. S.*
