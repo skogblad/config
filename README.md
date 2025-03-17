@@ -36,6 +36,20 @@ npm run dev
 
 -----
 
+### Node.js
+[Läs mer här](https://nodejs.org/en/download)
+
+#### Express
+```bash
+npm install express --save
+```
+![Skärmavbild 2025-03-17 kl  10 35 16](https://github.com/user-attachments/assets/3ca5b092-f1ec-4a3b-b5ab-68e1eddc48fc)
+
+#### Express & TypeScript:
+[Läs mer här](https://kinsta.com/blog/express-typescript/?utm_source=chatgpt.com)
+
+-----
+
 ### .gitignore -fil
 **Lägg till följande:** .DS_Store, *.css.map, style.css, node_modules/
 
