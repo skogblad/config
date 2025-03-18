@@ -43,10 +43,18 @@ npm run dev
 ```bash
 npm install express --save
 ```
-![Skärmavbild 2025-03-17 kl  10 35 16](https://github.com/user-attachments/assets/3ca5b092-f1ec-4a3b-b5ab-68e1eddc48fc)
-
 #### Express & TypeScript:
 [Läs mer här](https://kinsta.com/blog/express-typescript/?utm_source=chatgpt.com)
+
+### Guide
+
+<details>
+<summary><strong>Guide</strong> <i>(1 image)</i></summary>
+
+##### Från API-utvecklig kurs:
+![Skärmavbild 2025-03-18 kl  08 52 38](https://github.com/user-attachments/assets/53734d58-5de6-4aaf-b91b-689aab7cf312)
+
+</details>
 
 -----
 
@@ -139,9 +147,9 @@ Starta om Visual Studio Code.
 
 Alla regler som finns tillgängliga hittar ni [här](https://prettier.io/docs/en/options).
 
-Exempel: Jennis [.prettierrc](https://github.com/postmodernistx/configs/blob/main/.prettierrc.json)
+**Exempel: Jennis [.prettierrc](https://github.com/postmodernistx/configs/blob/main/.prettierrc.json)**
 
-Exempel: Jennis [.prettierignore](https://github.com/postmodernistx/configs/blob/main/.prettierignore)
+**Exempel: Jennis [.prettierignore](https://github.com/postmodernistx/configs/blob/main/.prettierignore)**
 
 -----
 
