@@ -6,6 +6,10 @@
 ```bash
 npm create vite@latest .
 ```
+*alternativt installera en exakt version (som vets är stabil: 5/5/2025):*
+```bash
+npm install vite@4.0.0 --save-dev
+```
 *- Välj Vue som ramverk om så önskas (nedan för skolprojekt):*
 <br>*- Välj "Customize with create-vue" (Official Vue Starter) för att lägga till routing och state management i app:*
 <br>*- Välj YES på: Vue Router*
