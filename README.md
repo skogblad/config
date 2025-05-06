@@ -64,10 +64,10 @@ npm install express --save
 
 ### .gitignore -fil
 **Lägg till följande:**
-dist
-node_modules
-.DS_Store
-package-lock.json
+dist <br>
+node_modules <br>
+.DS_Store <br>
+package-lock.json <br>
 .env
 
 -----
