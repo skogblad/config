@@ -63,7 +63,7 @@ npm install express --save
 -----
 
 ### .gitignore -fil
-**Lägg till följande:**
+**Lägg till följande:** <br>
 dist <br>
 node_modules <br>
 .DS_Store <br>
