@@ -64,6 +64,9 @@ npm install mongoose
 ```bash
 npm install jsonwebtoken
 ```
+```bash
+npm install --save @types/jsonwebtoken
+```
 [Läs mer här](https://www.npmjs.com/package/jsonwebtoken)
 
 ### Guide
