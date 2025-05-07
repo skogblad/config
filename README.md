@@ -50,6 +50,22 @@ npm install express --save
 #### Express & TypeScript:
 [Läs mer här](https://kinsta.com/blog/express-typescript/?utm_source=chatgpt.com)
 
+-----
+
+### API
+
+#### mongoose:
+```bash
+npm install mongoose
+```
+[Läs mer här](https://www.npmjs.com/package/mongoose)
+
+#### jsonwebtoken:
+```bash
+npm install jsonwebtoken
+```
+[Läs mer här](https://www.npmjs.com/package/jsonwebtoken)
+
 ### Guide
 
 <details>
