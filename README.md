@@ -69,6 +69,15 @@ npm install --save @types/jsonwebtoken
 ```
 [Läs mer här](https://www.npmjs.com/package/jsonwebtoken)
 
+#### cookie-parser:
+```bash
+npm install cookie-parser
+```
+```bash
+npm install --save @types/cookie-parser
+```
+[Läs mer här](https://www.npmjs.com/package/cookie-parser)
+
 ### Guide
 
 <details>
