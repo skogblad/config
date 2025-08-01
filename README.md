@@ -30,11 +30,17 @@ export default defineConfig({
 
 -----
 
-### Vue
+### Vue / React
 **1. Lägg till:** 
 ```bash
 npm create vue@latest
+```
+***--> Välj önskat ramverk***
+
+```bash
 npm install
+```
+```bash
 npm run dev
 ```
 
