@@ -51,6 +51,10 @@ npm install
 npm run dev
 ```
 
+*React Router:*
+```bash
+npm i react-router
+```
 -----
 
 ### Node.js
