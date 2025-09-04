@@ -57,6 +57,14 @@ npm i react-router
 ```
 -----
 
+### next.js
+
+```bash
+npm create-next-app@latest
+```
+
+-----
+
 ### Node.js
 [Läs mer här](https://nodejs.org/en/download)
 
