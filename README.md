@@ -322,3 +322,64 @@ base: "./",
 }
 
 </details>
+
+3. Fixa 404 sida
+<details>
+<summary><strong>Skapa egen 404.html i public mapp</strong></summary>  
+
+![Skärmavbild 2025-09-12 kl  15 18 16](https://github.com/user-attachments/assets/d0d82cbb-a4b9-4149-a840-8217024e5d18)
+
+<meta http-equiv="refresh" content="0; URL=/The-Zoo/" />
+<script type="text/javascript">
+  var pathSegmentsToKeep = 1;
+
+  var l = window.location;
+  l.replace(
+    l.protocol +
+      "//" +
+    l.hostname +
+    (l.port? ":" + l.port : "") +
+    l.pathname
+      .split("/")
+      .slice(0, 1 + pathSegmentsToKeep)
+      .join("/") +
+    "/?/" +
+    l.pathname
+      .slice(1)
+      .split("/")
+      .slice(pathSegmentsToKeep)
+      .join("/")
+      .replace(/&/g, "~and~") +
+    (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~"):"") +
+    l.hash
+  );
+</script>
+
+</details>
+
+<details>
+<summary><strong>I index.html filen</strong></summary>  
+
+![Skärmavbild 2025-09-12 kl  15 19 40](https://github.com/user-attachments/assets/76c2e291-857e-4eb4-be3f-6fc6932b0b98)
+
+<script type="text/javascript">
+  (function(l) {
+    if (l.search[1] === "/") {
+      var decoded = l.search
+        .slice(1)
+        .split("&")
+        .map(function (s) {
+          return s.replace(/~and~/g, "&");
+        })
+        .join("?");
+      window.history.replaceState(
+        null,
+        null,
+        l.pathname.slice(0, -1) + decoded + l.hash
+      );
+    }
+  })(window.location);
+</script>
+
+</details>
+
