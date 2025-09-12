@@ -269,17 +269,18 @@ npm run build
 ### Lägg in yml och fixa routing för gh-pages
 1. Välj "static HTML yml" på gh pages och commita in i projektet.
 2. i VS Code, hämta hem och uppdatera yml till följande:
+
 <details>
 <summary><strong>yml</strong></summary>
   
   ![Skärmavbild 2025-09-12 kl  15 06 59](https://github.com/user-attachments/assets/191b9a4b-a124-439d-8100-3fe7c3c2d2c9)
 
   ```bash
-  - name: Set up Node
-    uses: actions/setup-node@v4
-    with:
-      node-version: 20
-      cache: "npm"**
+    - name: Set up Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+        cache: "npm"**
   ```
 
   ```bash    
