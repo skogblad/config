@@ -273,52 +273,52 @@ npm run build
 <details>
 <summary><strong>yml</strong></summary>
   
-  ![Skärmavbild 2025-09-12 kl  15 06 59](https://github.com/user-attachments/assets/191b9a4b-a124-439d-8100-3fe7c3c2d2c9)
+![Skärmavbild 2025-09-12 kl  15 06 59](https://github.com/user-attachments/assets/191b9a4b-a124-439d-8100-3fe7c3c2d2c9)
 
-  ```bash
-    - name: Set up Node
-      uses: actions/setup-node@v4
-      with:
-        node-version: 20
-        cache: "npm"**
-  ```
+```bash
+name: Set up Node
+uses: actions/setup-node@v4
+with:
+    node-version: 20
+    cache: "npm"
+```
 
-  ```bash    
-    - name: Install dependencies
-      run: npm install
-  ```
+```bash    
+name: Install dependencies
+run: npm install
+```
 
-  ```bash
-    - name: Build
-      run: npm run build
-  ```
+```bash
+name: Build
+run: npm run build
+```
 
-  ```bash
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        # Upload entire repository
-        path: "./dist" <-- change name only!
-    ```
+```bash
+name: Upload artifact
+uses: actions/upload-pages-artifact@v3
+with:
+
+path: "./dist" change name only
+```
 
 </details>
 
 <details>
 <summary><strong>vite.config.ts</strong></summary>  
   
-  ![Skärmavbild 2025-09-12 kl  15 05 28](https://github.com/user-attachments/assets/0329d60e-090f-4242-9848-123fd731574a)
+![Skärmavbild 2025-09-12 kl  15 05 28](https://github.com/user-attachments/assets/0329d60e-090f-4242-9848-123fd731574a)
 
-  **base: "./",**
+base: "./",
 
 </details>
 
 <details>
 <summary><strong>Router.tsx</strong></summary>  
   
-  ![Skärmavbild 2025-09-12 kl  15 04 22](https://github.com/user-attachments/assets/9b70693a-b60d-4867-8e4c-293c9db729fb)
+![Skärmavbild 2025-09-12 kl  15 04 22](https://github.com/user-attachments/assets/9b70693a-b60d-4867-8e4c-293c9db729fb)
 
-  **{
-      basename: import.meta.env.DEV ? "" : "*repository-name*/",
-  }**
+{
+  basename: import.meta.env.DEV ? "" : "repository-name/",
+}
 
 </details>
