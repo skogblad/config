@@ -329,6 +329,7 @@ base: "./",
 
 ![Skärmavbild 2025-09-12 kl  15 18 16](https://github.com/user-attachments/assets/d0d82cbb-a4b9-4149-a840-8217024e5d18)
 
+*OBS, missa inte meta-text som ej syns förutom i redigeringsvy!*
 <meta http-equiv="refresh" content="0; URL=/repository-name/" />
 <script type="text/javascript">
   var pathSegmentsToKeep = 1;
