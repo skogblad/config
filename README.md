@@ -264,3 +264,73 @@ Vid publicering av projektet, dvs. göra om TS -> JS och Sass -> CSS, kör scrip
 ```bash
 npm run build
 ```
+-----
+
+### Lägg in yml och fixa routing för gh-pages
+1. Välj "static HTML yml" på gh pages och commita in i projektet.
+2. i VS Code, hämta hem och uppdatera yml till följande:
+<details>
+<summary><strong>yml</strong></summary>
+  
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      **- name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+      - name: Install dependencies
+        run: npm install
+      - name: Build
+        run: npm run build**
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: ".**/dist**"
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+</details>
+
+<details>
+<summary><strong>vite.config.ts</strong></summary>  
+  
+  // https://vite.dev/config/
+  export default defineConfig({
+    plugins: [react()],
+    **base: "./",**
+  })
+
+</details>
+
+<details>
+<summary><strong>Router.tsx</strong></summary>  
+
+  export const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
+      errorElement: <Error />,
+      children: [
+        {
+          path: "/",
+          element: <Home />
+        }
+      ],
+    },
+  ], **{
+    basename: import.meta.env.DEV ? "" : "*repository-name*/",
+  }**);
+
+</details>
