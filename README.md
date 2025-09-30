@@ -329,32 +329,42 @@ base: "./",
 
 ![Skärmavbild 2025-09-12 kl  15 18 16](https://github.com/user-attachments/assets/d0d82cbb-a4b9-4149-a840-8217024e5d18)
 
-*OBS, missa inte meta-text som ej syns förutom i redigeringsvy!*
-<meta http-equiv="refresh" content="0; URL=/repository-name/" />
-<script type="text/javascript">
-  var pathSegmentsToKeep = 1;
-
-  var l = window.location;
-  l.replace(
-    l.protocol +
-      "//" +
-    l.hostname +
-    (l.port? ":" + l.port : "") +
-    l.pathname
-      .split("/")
-      .slice(0, 1 + pathSegmentsToKeep)
-      .join("/") +
-    "/?/" +
-    l.pathname
-      .slice(1)
-      .split("/")
-      .slice(pathSegmentsToKeep)
-      .join("/")
-      .replace(/&/g, "~and~") +
-    (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~"):"") +
-    l.hash
-  );
-</script>
+**OBS, gå in i redigeringsvy - all text syns inte!**
+<br>
+**--> Glöm inte att ändra repository-name!**
+  <!DOCTYPE html>
+  <html lang="sv">
+  <head>
+    <meta http-equiv="refresh" content="0; URL=/repository-name/" />
+    <script type="text/javascript">
+      var pathSegmentsToKeep = 1;
+  
+      var l = window.location;
+      l.replace(
+        l.protocol +
+          "//" +
+        l.hostname +
+        (l.port? ":" + l.port : "") +
+        l.pathname
+          .split("/")
+          .slice(0, 1 + pathSegmentsToKeep)
+          .join("/") +
+        "/?/" +
+        l.pathname
+          .slice(1)
+          .split("/")
+          .slice(pathSegmentsToKeep)
+          .join("/")
+          .replace(/&/g, "~and~") +
+        (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~"):"") +
+        l.hash
+      );
+    </script>
+  </head>
+  <body>
+    
+  </body>
+  </html>
 
 </details>
 
